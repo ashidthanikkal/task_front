@@ -128,6 +128,7 @@ function TaskHome() {
                             <p className='text-center'>{task.status}</p>
                             <h6 className='ms-2'>Progress:</h6>
                             <p className='text-center'>{task.progress}%</p>
+                            <i className="fa-solid fa-lg fa-pen-to-square ms-3" style={{color: "#000000"}}></i>
                             <i className="fa-solid fa-lg fa-trash text-end me-3" onClick={() => handleDelete(task.id)} style={{color: "#ff0000"}}></i>
                         </div>
                     )) : <h1>No Tasks to do</h1>
